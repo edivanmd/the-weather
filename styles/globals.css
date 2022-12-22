@@ -1,26 +1,43 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+}
+body{
+  background-color: #1E213A;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.myTab div + div { 
+  background-color: #100E1D; 
+  height: 40px ;
+  border-bottom-right-radius : 0;
+  border-bottom-left-radius : 0;
 }
+
+ul[role="tablist"] {
+  border-bottom-right-radius : 0;
+  border-bottom-left-radius : 0;
+}
+
+div[role="tabpanel"]:nth-child( odd ) { background-color: #1E213A; }
+div[role="tabpanel"]:nth-child( even ) { background-color: #293241; }
+
+
+.myTab:last-child {display: none;}
+.myTab:nth-last-of-type(2) {display: none;}
+.tabPanelBody img.imgWeather{margin: 5px auto 10px; height: auto; max-width: 170px;}
+
+.inputCity {color: white; font-family: 'Quicksand', sans-serif; font-size: 1.5rem;}
+.inputCity + label, .inputCity + label:focus {color: white!important;}
+.inputCity + label::after {border-color: white!important;}
+
