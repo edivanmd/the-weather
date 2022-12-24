@@ -5,7 +5,7 @@ import { DateBuilder } from "../components";
 
 const MainTemperature = ({ handleNavbar, dataToday }) => {
     return( 
-        <div className="flex flex-col gap-10 items-center p-10 w-full md:w-[35%]">
+        <div className="flex flex-col gap-10 items-center p-5 md:p-10 w-full md:w-[35%]">
             <button onClick={handleNavbar} type="button" className="bg-[#100E1D] p-3 shadow-lg w-fit hover:bg-white hover:text-[#100E1D] ease-linear duration-300 rounded-sm">Search for places</button>
 
             {dataToday && (

@@ -4,7 +4,7 @@ import { WeekInfo, Highlights } from "../components";
 
 const SecondTemperature = ({ dataToday, dataForecast }) => {
   return (
-    <div className="bg-[#100E1D] w-full md:w-[65%] p-10">
+    <div className="bg-[#100E1D] w-full md:w-[65%] p-5 md:p-10">
 
       <div className="max-w-[700px] m-auto">
         <h2 className="text-2xl">Today's highlights</h2>
