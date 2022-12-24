@@ -33,6 +33,7 @@ const Navbar = ({ handleNavbar, nav, setPassingData }) => {
             handleNavbar();
         } catch (error) {
             setShow(true); //error Alert
+            setIsLoading(false)
         }
     }
 
